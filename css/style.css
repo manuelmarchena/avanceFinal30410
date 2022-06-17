@@ -1,0 +1,132 @@
+/**
+* ? Comentario en Azul
+* ! Cpomentario en rojo
+* TODO para anaranjado
+* * Para verde y resaltar
+**/
+
+
+/**
+* ! Cmbiando fuente default
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/**
+* ! Navbar style
+**/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #264653;
+    color: white;
+    /* 25px top and bottom, 60px letf and right */
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+.carrrito {
+    position: relative;
+    background-color: #fff;
+    color: #264653;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.enLista {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.item>img {
+    width: 220px;
+}
+
+
+/**
+* ! estilos de shop abajo
+**/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border-radius: 4px;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.precio-cantidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-plus-circle {
+    color: green;
+}
+
+.bi-dash-circle {
+    color: red;
+}
+
+
+/**
+* ! reglas de stilos para label y algunos botones
+*/
